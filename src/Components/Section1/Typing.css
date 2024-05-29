@@ -1,0 +1,32 @@
+.content {
+    padding-top: 160px; 
+    background-color: #353941; 
+    color: aliceblue;
+    position:relative;
+    
+  }
+ .typing-effect {
+    
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    display: block;
+    justify-content: center; 
+    min-height: 100vh; 
+    margin: 0;
+    
+  }
+
+  .caret {
+    display: inline-block;
+    animation: blink 0.7s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  } 
+  
