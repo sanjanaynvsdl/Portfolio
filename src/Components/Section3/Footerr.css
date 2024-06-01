@@ -1,0 +1,23 @@
+/* Section3/Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px; /* Padding around the footer content */
+  }
+  
+  .developer-info p,
+  .copyright p {
+    color: white; /* Text color */
+  }
+  
+  .social-icons a {
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 10px; /* Spacing between icons */
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+  }

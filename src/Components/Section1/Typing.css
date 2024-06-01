@@ -3,19 +3,23 @@
     background-color: #353941; 
     color: aliceblue;
     position:relative;
-    
+  }
+  .section11{
+    display: flex;
   }
  .typing-effect {
-    
-    /* white-space: nowrap; */
-    /* overflow: hidden; */
     display: block;
     justify-content: center; 
-    min-height: 100vh; 
-    margin: 0;
-    
+    min-height: 80vh; 
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 12rem;
+    text-align: start;
+    padding-top: 6rem;
   }
-
+  .typing-effect .name{
+    color: #b093d6;
+  }
   .caret {
     display: inline-block;
     animation: blink 0.7s step-end infinite;
