@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import About from './Components/About/About';
 import Skills from './Components/Skills/Skills.js';
 import Footerr from './Components/Footer/Footerr';
+import Projects from './Components/Projects/Projects.js';
 import './App.css';
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/skills" component={Skills} />
+        <Route path="/projects" component={Projects} />
       </Switch>
-      <Footerr />
+      <Footerr/>
     </Router>
   );
 }

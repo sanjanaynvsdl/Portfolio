@@ -9,16 +9,17 @@ function Skills() {
         { name: 'Java', image: require("../Assets/java.png") }, // Assuming image paths are correct
         { name: 'Python', image: require("../Assets/python.png") },
         { name: 'MySQL', image: require("../Assets/mysql.png") },
+        {name : 'JavaScript', image: require("../Assets/js.png")},
       ],
-      className: 'move-right', // Add class to this category
     },
     {
       title: 'Frameworks & Technologies',
       skills: [
         { name: 'React', image: require("../Assets/react.png") },
         { name: 'Nodejs', image: require("../Assets/nodejs.png") },
+        {name:'spring', image: require("../Assets/spring.png")},
       ],
-      className: 'move-right', // Add class to this category
+      
     },
     {
       title: 'Tools & Platforms',
@@ -33,7 +34,7 @@ function Skills() {
   return (
     <section className="skills">
       <h2>Skills</h2>
-      <p>I love to learn new things and experiment with new technologies.</p>
+      <p>"I enjoy learning various skills and exploring new technologies to tackle different challenges effectively."</p>
       {skillsData.map((skillCategory) => (
         <div className={`skill-category ${skillCategory.className || ''}`} key={skillCategory.title}>
           <h3>{skillCategory.title}</h3>

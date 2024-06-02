@@ -39,10 +39,11 @@ function NavBar() {
           <Link to='/skills'><FontAwesomeIcon icon={faTools} className="fa-icon" />Skills</Link>
         </li>
         <li className="nav-item">
-          <a href="link"><FontAwesomeIcon icon={faProjectDiagram} className="fa-icon" />Projects</a>
+          <a href="projects"><FontAwesomeIcon icon={faProjectDiagram} className="fa-icon" />Projects</a>
         </li>
         <li className="nav-item">
-          <a href="link"><FontAwesomeIcon icon={faFile} className="fa-icon" />Resume</a>
+          {/* <a href="link"><FontAwesomeIcon icon={faFile} className="fa-icon" />Resume</a> */}
+           <a href="https://drive.google.com/file/d/13kaPsdMNDsM4LV9g7m5-E5PTildp-yYf/view" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFile} className="fa-icon" />Resume</a>
         </li>
       </ul>
     </nav>

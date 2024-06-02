@@ -1,24 +1,38 @@
 /* Section3/Footer.css */
 
 .footer {
-    display: flex;
+  display: flex;
+  flex-direction: column; /* Change flex-direction to column for smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #353941; /* Footer background color */
+}
+
+.developer-info p,
+.copyright p {
+  color: white;
+}
+
+.social-icons {
+  margin-top: 10px; /* Add margin-top for better spacing */
+}
+
+.social-icons a {
+  color: white; /* Icon color */
+  text-decoration: none; /* Remove underline from links */
+  margin: 0 5px; /* Adjust margin for better spacing */
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+/* Media queries for responsiveness */
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row; /* Change flex-direction to row for larger screens */
     justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-    background-color: #353941; /* Footer background color */
   }
-  
-  .developer-info p,
-  .copyright p {
-    color: white;
-  }
-  
-  .social-icons a {
-    color: white; /* Icon color */
-    text-decoration: none; /* Remove underline from links */
-    margin-right: 10px;
-  }
-  
-  .social-icons a:last-child {
-    margin-right: 0; 
-  }
+}

@@ -1,40 +1,46 @@
 .skills {
-  margin-top: 50px;
   padding: 20px;
-  min-height: 81vh;
+  min-height: 88vh;
   background-color: #353941;
-  color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  display: flex; /* Change to flex */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
 }
 
 .skills h2 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 4rem;
-  color: #b093d6; /* Change the color of the main heading */
+  color: #b093d6; /* Change color of the heading */
 }
 
 .skill-category {
   margin-bottom: 20px;
+  color: #b093d6;
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Change justify-content to flex-start */
+  justify-content: center; /* Center items in the flex container */
 }
 
 .skill {
   display: inline-flex; /* Display skills inline */
   align-items: center;
-  margin-right: 10px; /* Adjust spacing between skills */
+  margin: 10px; /* Adjust spacing between skills */
+  color: aliceblue;
+}
+.skills p{
+  color: aliceblue;
+  /* font-size: 1rem; */
 }
 
 .skill h3 {
-  margin-bottom: 5px;
-  margin-left: 12rem;
-  color: #b093d6; /* Change the color of the category headings */
+  /* margin-bottom: 5px; */
+  
 }
 
 .skill-list {
@@ -55,11 +61,7 @@
 
 .skill-name {
   white-space: nowrap; /* Prevent skill names from wrapping */
-}
-
-/* Specific margin for Languages & Databases and Frameworks & Technologies */
-.move-right {
-  /* margin-left: rem; */
+  color: aliceblue;
 }
 
 /* Responsive adjustments */
@@ -72,9 +74,5 @@
   .skill {
     width: 100%;
     max-width: 200px;
-  }
-
-  .move-right {
-    margin-left: 0; /* Remove the margin on smaller screens */
   }
 }
