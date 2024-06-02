@@ -38,7 +38,7 @@ function Typing({ text,typingSpeed=100,deleteSpeed=50,duration=1000}) {
         <h1>Hi There!</h1>
         <h1>I'm <span class="name">Sanjana</span></h1>
       {displayedText}
-      <span className="caret">|</span>
+      <span className="caret"></span>
     </div>
   )
 }

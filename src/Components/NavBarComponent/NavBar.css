@@ -1,49 +1,72 @@
-
-.navbar ul{
+.navbar ul {
   list-style: none;
   display: flex;
 }
+
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: flex-end; 
-  padding: 10px 20px;
+  justify-content: space-between; /* Change to space-between for responsiveness */
+  align-items: center; /* Align items vertically */
+  padding: 5px;
   position: fixed; /* Fix the navbar to the top of the viewport */
   top: 0; /* Ensure the navbar sticks to the top */
   z-index: 2;
-  background-color: #26282B; /* Add background color to the navbar */
-  padding-right: 100px;
-}
-.logo-name {
-  color: #b093d6;
-  position: fixed;
-  top: 0;
-  left: 1.5rem;
-  font-size: 2rem;
-  margin: 20px; /* Adjust the margin as needed for spacing */
+  background-color: #26282B;
 }
 
-.nav-item{
-  margin: 0 15px;
+.logo-name {
+  color: #b093d6;
+  font-size: 1.5rem; /* Reduce font size for smaller screens */
+  padding-left: 30px;
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 1.5rem; */
 }
-.nav-item a{
+
+.nav-item {
+  margin: 0 10px; /* Reduce margin for smaller screens */
+  padding: 0 10px; /* Reduce padding for smaller screens */
+}
+
+.nav-item a {
   color: white;
   text-decoration: none;
 }
-.fa-icon{
-  padding-right:5px;
+
+.fa-icon {
+  margin-right: 5px; /* Reduce margin for smaller screens */
 }
-.nav-item a::after{
+
+.nav-item a::after {
   content: "";
   display: block;
   height: 2px;
   width: 0%;
   background: white;
-  transition:width 0.3s ease;
+  transition: width 0.3s ease;
 }
-.nav-item a:hover::after{
+
+.nav-item a:hover::after {
   width: 100%;
-} 
+}
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px; /* Increase padding for smaller screens */
+  }
+  
+  .logo-name {
+    font-size: 1.2rem; /* Further reduce font size for smaller screens */
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
 
+  .nav-item {
+    margin: 0 5px; /* Further reduce margin for smaller screens */
+    padding: 0 5px; /* Further reduce padding for smaller screens */
+  }
 
+  .fa-icon {
+    margin-right: 3px; /* Further reduce margin for smaller screens */
+  }
+}

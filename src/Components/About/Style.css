@@ -1,0 +1,86 @@
+/* Existing Styles */
+/* <-- About --> */
+.Container1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353941;
+    color: aliceblue;
+    min-height: 92vh;
+  }
+  
+  .container2 {
+    padding-right: 20px;
+    position: relative;
+    top: 8rem;
+    left: 8rem;
+    font-size: 1.11rem;
+  }
+  
+  .highlight {
+    color: #b093d6;
+  }
+  
+  .container2 p {
+    line-height: 1.6;
+    max-width: 100ch;
+    overflow-wrap: break-word;
+  }
+  
+  .contentss {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-top: 4rem;
+  }
+  
+  .box {
+    margin: 10px;
+    background-color: #26282B;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    margin: 8px;
+    margin-left: 5rem;
+    width: 65%;
+    height: 30%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .container2 {
+      top: 5rem;
+      left: 5rem;
+    }
+  
+    .contentss {
+      padding-left: 5rem;
+      padding-top: 2rem;
+    }
+  
+    .box {
+      width: 80%;
+      margin-left: 0;
+    }
+  }
+  
+  /* Box Transition */
+  
+  .box {
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth transformation */
+
+  }
+  .box h3{
+    color: #b093d6;
+  }
+  .box span{
+    color:white
+  }
+  
+  .box:hover {
+    transform: scale(1.05); /* Apply a slight scale on hover */
+  }
+  
