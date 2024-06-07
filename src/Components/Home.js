@@ -24,11 +24,12 @@ const Home = () => {
           deleteSpeed={50}
           duration={1000}
         />
+        <div class="lottiee">
         <Lottie
           options={lottieOptions}
           height={530}
           width={530}
-        />
+        /> </div>
       </div>
       <BriefItro />
     </section>

@@ -1,24 +1,27 @@
-.content {
+ .content {
   padding-top: 160px; 
   background-color: #353941; 
   color: aliceblue;
   position:relative;
 }
 
-.section11 {
-  display: flex;
-  flex-direction: column; /* Change flex-direction to column for smaller screens */
-  align-items: center; /* Center content horizontally */
-}
+/*.section11 {
+  align-items: center; 
+} */
+.lottiee{
+  position: relative;
+  margin-top:-35rem;
+  left:20rem;
 
+} 
 .typing-effect {
-  display: block;
-  justify-content: center; 
+
   min-height: 60vh; 
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
-  text-align: center; /* Center text horizontally */
-  padding: 6rem 1rem; /* Adjust padding for better spacing */
+  text-align: center;
+  position:relative;
+  
 }
 
 .typing-effect .name {
@@ -28,7 +31,7 @@
 .caret {
   display: inline-block;
   animation: blink 0.7s step-end infinite;
-}
+} 
 
 @keyframes blink {
   from, to {
@@ -39,16 +42,16 @@
   }
 }
 
-/* Media queries for responsiveness */
+
 
 @media (min-width: 768px) {
   .section11 {
-    flex-direction: row; /* Change flex-direction to row for larger screens */
+    flex-direction: row;
   }
 
   .typing-effect {
-    padding-left: 12rem; /* Restore padding-left for larger screens */
-    text-align: start; /* Reset text-align for larger screens */
-    padding-top: 6rem; /* Restore padding-top for larger screens */
+    padding-left: 12rem;
+    text-align: start; 
+    padding-top: 6rem; 
   }
-}
+} 
